@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Como falar com António Dias por email, LinkedIn ou itch.io.">
+  <title>Contacto | António Dias</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&amp;display=swap">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="António Dias, página inicial">AD</a>
+      <nav aria-label="Menu principal">
+        <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list" id="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contacto.html" class="ativo" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="container page-intro">
+      <h1>Contacto</h1>
+      <p>Estou à procura de estágio para agosto de 2027, presencial ou remoto. A forma mais rápida de falar comigo é por email.</p>
+    </section>
+
+    <div class="container section contact-grid">
+      <section>
+        <h2>Onde me encontrar</h2>
+        <ul class="contact-list">
+          <li>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:topepereiradias@gmail.com">topepereiradias@gmail.com</a>
+            </div>
+            <button class="copy-btn" id="copy-email" type="button" data-email="topepereiradias@gmail.com">Copiar</button>
+          </li>
+          <li>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/ant%C3%B3nio-dias-7a324a388/" target="_blank" rel="noopener noreferrer">António Dias</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <span class="contact-label">itch.io</span>
+              <a href="https://gentle-blob-studios.itch.io/" target="_blank" rel="noopener noreferrer">Gentle Blob Studios</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="box">
+        <h2>Enviar mensagem</h2>
+        <form action="mailto:topepereiradias@gmail.com" method="post" enctype="text/plain">
+          <div class="form-field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+          </div>
+          <button class="btn" type="submit">Enviar</button>
+          <p class="form-note">Ao carregar em Enviar, abre-se o teu programa de email com a mensagem já escrita.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 António Dias</p>
+      <ul class="footer-links">
+        <li><a href="mailto:topepereiradias@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/ant%C3%B3nio-dias-7a324a388/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://gentle-blob-studios.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

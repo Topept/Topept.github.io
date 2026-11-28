@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jogos em Unity e Unreal Engine, efeitos visuais, modelação 3D e web feitos por António Dias no curso.">
+  <title>Projetos | António Dias</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&amp;display=swap">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="António Dias, página inicial">AD</a>
+      <nav aria-label="Menu principal">
+        <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list" id="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" class="ativo" aria-current="page">Projetos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="container page-intro">
+      <h1>Projetos</h1>
+      <p>Trabalhos que fiz no curso, de jogos a 3D e web. Clica num projeto para ver mais.</p>
+    </section>
+
+    <div class="container section">
+      <div class="filters" role="group" aria-label="Filtrar projetos por categoria">
+        <button class="filter-btn ativo" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+        <button class="filter-btn" type="button" data-filter="jogos" aria-pressed="false">Jogos</button>
+        <button class="filter-btn" type="button" data-filter="3d-vfx" aria-pressed="false">3D/VFX</button>
+        <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card" data-category="jogos">
+          <img src="assets/img/lawbot-titulo.jpg" alt="Ecrã de título do LawBot" width="1200" height="675">
+          <div class="card-body">
+            <h2>LawBot</h2>
+            <ul class="tags">
+              <li>Unity</li>
+              <li>C#</li>
+              <li>Equipa de 3</li>
+            </ul>
+            <p>Shooter 2D de ação em que controlas um pequeno robô contra rondas de inimigos.</p>
+            <button class="card-btn" type="button">Ver detalhes</button>
+          </div>
+
+          <!-- Conteúdo que o JS copia para o modal -->
+          <div class="project-details" hidden>
+            <p>Shooter 2D de ação feito no Politécnico de Leiria. Controlas um pequeno robô que enfrenta rondas de inimigos, desvia-se de ataques e compra upgrades entre rondas. Tem três níveis de dificuldade e um modo infinito.</p>
+            <p>Fui o programador do jogo e também contribuí para o game design.</p>
+            <div class="modal-gallery">
+              <img src="assets/img/lawbot-combate.jpg" alt="O robô a disparar contra inimigos" width="1200" height="675" loading="lazy">
+              <img src="assets/img/lawbot-loja.jpg" alt="Loja de upgrades entre rondas" width="1200" height="675" loading="lazy">
+              <img src="assets/img/lawbot-gameplay.jpg" alt="Combate com o contador de inimigos restantes" width="1200" height="675" loading="lazy">
+            </div>
+            <ul class="detalhes">
+              <li><span>Game developer</span> António Dias</li>
+              <li><span>Game designer</span> Mariana Falcão</li>
+              <li><span>Game artist</span> Joaquim Rodrigues</li>
+            </ul>
+            <div class="button-row">
+              <a class="btn" href="https://gentle-blob-studios.itch.io/lawbot" target="_blank" rel="noopener noreferrer">Jogar no itch.io</a>
+              <a class="btn btn-outline" href="https://youtu.be/fg-Er66feL4" target="_blank" rel="noopener noreferrer">Trailer no YouTube</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="jogos">
+          <img src="assets/img/unreal-capa.jpg" alt="Personagem pendurada numa corda num nível de teste" width="1280" height="720">
+          <div class="card-body">
+            <span class="badge">Em desenvolvimento</span>
+            <h2>Projeto de Game Engines</h2>
+            <ul class="tags">
+              <li>Unreal Engine</li>
+              <li>Blueprints</li>
+              <li>Equipa de 3</li>
+            </ul>
+            <p>Jogo em Unreal feito em grupo. A minha parte foi uma mecânica de gameplay.</p>
+            <button class="card-btn" type="button">Ver detalhes</button>
+          </div>
+
+          <div class="project-details" hidden>
+            <p>Jogo em Unreal Engine que estou a fazer com mais dois colegas para a cadeira de Game Engines.</p>
+            <p>Fiquei com a mecânica que aparece no vídeo, feita em Blueprints. A personagem agarra-se a uma corda presa a pontos no ar e larga-a com a tecla E.</p>
+            <!-- O #t=0,10.2 faz o vídeo parar aos 10,2 s, antes de aparecer o editor do Unreal -->
+            <video class="project-video" controls preload="none" poster="assets/img/unreal-poster.jpg" width="1724" height="736">
+              <source src="assets/video/unreal-gameplay.mp4#t=0,10.2" type="video/mp4">
+              O teu browser não consegue mostrar este vídeo.
+            </video>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="3d-vfx">
+          <img src="assets/img/vfx-capa.jpg" alt="Carro parado no túnel em frente à cascata" width="1042" height="586">
+          <div class="card-body">
+            <h2>Túnel com cascata (The Matrix)</h2>
+            <ul class="tags">
+              <li>Unreal Engine</li>
+              <li>Niagara</li>
+              <li>Individual</li>
+            </ul>
+            <p>Recriação da cena do túnel de The Matrix, com efeitos de água feitos por mim.</p>
+            <button class="card-btn" type="button">Ver detalhes</button>
+          </div>
+
+          <div class="project-details" hidden>
+            <p>Recriei a cena do túnel com cascata do filme The Matrix e fiz sozinho os efeitos, os materiais e o próprio túnel.</p>
+            <p>A cascata e os salpicos no chão são sistemas Niagara, com gotas, névoa e uma cortina de água por trás. O asfalto mistura um material seco com um molhado e tem poças com uma ondulação suave. Os reflexos usam Screen Space Reflections, e o tom verde vem do nevoeiro e de uma LUT.</p>
+            <div class="modal-gallery two-columns">
+              <img src="assets/img/vfx-tunel.jpg" alt="Vista geral do túnel com a cascata ao fundo" width="1400" height="586" loading="lazy">
+              <img src="assets/img/vfx-cascata.jpg" alt="Grande plano da cascata" width="1400" height="586" loading="lazy">
+              <img src="assets/img/vfx-chao-seco.jpg" alt="O túnel com o chão seco" width="1400" height="586" loading="lazy">
+              <img src="assets/img/vfx-chao-molhado.jpg" alt="O túnel com o chão molhado e poças" width="1400" height="586" loading="lazy">
+            </div>
+            <ul class="detalhes">
+              <li><span>Unidade curricular</span> VFX for Games</li>
+              <li><span>Motor</span> Unreal Engine 5.8</li>
+            </ul>
+            <p class="note">O carro é o "Phoenix 455 '71 - Low poly model", de Daniel Zhabotinsky (Sketchfab, CC BY 4.0), e as texturas de asfalto e betão são da Poly Haven (CC0).</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="3d-vfx">
+          <img src="assets/img/torre-frente.jpg" alt="Render da torre inclinada numa pequena ilha" width="1280" height="720">
+          <div class="card-body">
+            <h2>Torre inclinada</h2>
+            <ul class="tags">
+              <li>Blender</li>
+              <li>Modelação 3D</li>
+              <li>Equipa de 2</li>
+            </ul>
+            <p>Modelo 3D com texturas pintadas à mão. Num trabalho a pares, a torre foi a minha parte.</p>
+            <button class="card-btn" type="button">Ver detalhes</button>
+          </div>
+
+          <div class="project-details" hidden>
+            <p>Trabalho a pares em que cada um modelou uma figura e no fim juntámos as duas numa só cena. Fiquei com a torre inclinada e tratei da modelação, das UVs, das texturas e dos renders.</p>
+            <p>Comecei pelo corpo da torre, depois a base e a porta, o topo e por fim a ilha com o muro, as rochas e a relva. Os detalhes pequenos, como os tijolos e as telhas, ficaram na textura e no normal map, para poupar triângulos. No lado de trás acrescentei uma porta de madeira, uma lanterna dourada e suportes de madeira a segurar a torre.</p>
+            <p>As texturas foram pintadas à mão no Blender, com mapas de Base Color, Normal, Roughness e Metallic.</p>
+            <div class="modal-gallery two-columns">
+              <img src="assets/img/torre-frente.jpg" alt="A torre vista de frente" width="1280" height="720" loading="lazy">
+              <img src="assets/img/torre-direita.jpg" alt="A torre vista do lado direito" width="1280" height="720" loading="lazy">
+              <img src="assets/img/torre-esquerda.jpg" alt="A torre vista do lado esquerdo" width="1280" height="720" loading="lazy">
+              <img src="assets/img/torre-tras.jpg" alt="O lado de trás da torre, com a porta de madeira" width="1280" height="720" loading="lazy">
+            </div>
+            <ul class="detalhes">
+              <li><span>Unidade curricular</span> 3D Modelling</li>
+              <li><span>Ferramenta</span> Blender</li>
+              <li><span>Triângulos</span> 2166 (torre e ilha)</li>
+              <li><span>Texturas</span> 2 de 2048x2048 (torre e cenário)</li>
+            </ul>
+            <div class="button-row">
+              <a class="btn" href="https://skfb.ly/pQtCu" target="_blank" rel="noopener noreferrer">Ver no Sketchfab</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <img src="assets/img/portfolio.jpg" alt="Página inicial deste portfólio" width="1280" height="720">
+          <div class="card-body">
+            <h2>Este portfólio</h2>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <p>Site com cinco páginas feito para o projeto de Desenvolvimento Web.</p>
+            <button class="card-btn" type="button">Ver detalhes</button>
+          </div>
+
+          <div class="project-details" hidden>
+            <p>O meu portfólio era uma só página. Para o projeto de Desenvolvimento Web transformei-o neste site com cinco páginas, feito só com HTML, CSS e JavaScript, sem frameworks.</p>
+            <p>Com JavaScript fiz o menu para telemóvel, o filtro de projetos e esta janela de detalhes. O layout usa Flexbox e CSS Grid e adapta-se ao telemóvel com media queries.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Fechar">&times;</button>
+      <h2 id="modal-title">Projeto</h2>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 António Dias</p>
+      <ul class="footer-links">
+        <li><a href="mailto:topepereiradias@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/ant%C3%B3nio-dias-7a324a388/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://gentle-blob-studios.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
